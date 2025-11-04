@@ -8,7 +8,7 @@ password.oninput=function(){
     let colorPower=["red","orange","yellow","blue","green"];
 
     if(value.length>=8){
-        let arrayTest =[/[0-9]/,/[a-z]/,/[A-Z]/,/[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/];
+        let arrayTest =[/[0-9]/,/[a-z]/,/[A-Z]/,/[^0-9a-zA-Z]/];
 
         arrayTest.forEach((item)=>{
             if(item.test(value)) point++;
